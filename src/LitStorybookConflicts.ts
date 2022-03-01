@@ -1,10 +1,11 @@
-import { LitElement, html, css } from 'lit';
-import { property } from 'lit/decorators.js';
+import { LitElement, html, css } from "lit";
+import { property } from "lit/decorators.js";
+import "a-lit-legacy-component/a-lit-legacy-component.js";
 
-const logo = new URL('../../assets/open-wc-logo.svg', import.meta.url).href;
+const logo = new URL("../../assets/open-wc-logo.svg", import.meta.url).href;
 
 export class LitStorybookConflicts extends LitElement {
-  @property({ type: String }) title = 'My app';
+  @property({ type: String }) title = "My app";
 
   static styles = css`
     :host {
@@ -54,8 +55,11 @@ export class LitStorybookConflicts extends LitElement {
       <main>
         <div class="logo"><img alt="open-wc logo" src=${logo} /></div>
         <h1>${this.title}</h1>
+        <a-lit-legacy-component></a-lit-legacy-component>
 
-        <p>Edit <code>src/LitStorybookConflicts.ts</code> and save to reload.</p>
+        <p>
+          Edit <code>src/LitStorybookConflicts.ts</code> and save to reload.
+        </p>
         <a
           class="app-link"
           href="https://open-wc.org/guides/developing-components/code-examples"
