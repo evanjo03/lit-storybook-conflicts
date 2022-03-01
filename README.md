@@ -6,6 +6,8 @@ This application was created with the @open-wc generator and comes with storyboo
 
 There seems to be some dependency conflict around lit-html that occurs when using @web/dev-server-storybook, as running `npm run storybook` returns the error below. Note that `npm run start` works without any issue.
 
+![storybook error](https://user-images.githubusercontent.com/42701217/156242295-464aba01-3b8f-4bfa-b1c7-507cdf2184b5.JPG)
+
 ## Reproducing the Error:
 
 ```sh
